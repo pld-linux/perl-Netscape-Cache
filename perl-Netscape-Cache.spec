@@ -3,7 +3,7 @@ Summary:	Netscape-Cache perl module
 Summary(pl):	Modu³ perla Netscape-Cache
 Name:		perl-Netscape-Cache
 Version:	0.44
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
