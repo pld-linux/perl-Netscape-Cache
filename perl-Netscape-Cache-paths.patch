@@ -25,3 +25,19 @@
  
  #
  # $Id$
+--- examples/mkhier.pl.orig	Fri Feb 18 01:22:46 2000
++++ examples/mkhier.pl	Fri Feb 18 01:22:46 2000
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ # -*- perl -*-
+ 
+ #
+--- examples/nsindex.pl.orig	Fri Feb 18 01:22:54 2000
++++ examples/nsindex.pl	Fri Feb 18 01:22:54 2000
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ my $RCS_Id = '$Id$ ';
+ 
+ # Author          : Johan Vromans
