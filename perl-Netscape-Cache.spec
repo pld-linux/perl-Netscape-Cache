@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Netscape
-%define	pnam	Cache
+%define		pdir	Netscape
+%define		pnam	Cache
 Summary:	Netscape::Cache Perl module
 Summary(cs):	Modul Netscape::Cache pro Perl
 Summary(da):	Perlmodul Netscape::Cache
