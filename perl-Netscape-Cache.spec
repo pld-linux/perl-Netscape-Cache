@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
+%bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Netscape
@@ -32,9 +32,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
-%if %{!?_with_tests:0}%{?_with_tests:1}
-BuildRequires:	db1
-%endif
+%{?with_tests:BuildRequires:	db1}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,7 +50,7 @@ Netscape::Cache umo¿liwia dostêp do cache'a Nestscape'a.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
