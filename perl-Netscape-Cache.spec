@@ -6,9 +6,10 @@ Version:	0.44
 Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Netscape/Netscape-Cache-%{version}.tar.gz
-Patch0:		perl-Netscape-Cache-paths.patch
+Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 %requires_eq	perl
@@ -31,12 +32,12 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 rm -f examples/*~
-install examples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
+install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 gzip -9nf Changes README
 
@@ -45,11 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {Changes,README}.gz
-
+%doc *.gz
 %{perl_sitelib}/Netscape/Cache.pm
-%{perl_sitearch}/auto/Netscape/Cache
-
 %{_mandir}/man3/*
-
-%{_prefix}/src/examples/%{name}
+%{_examplesdir}/%{name}-%{version}
