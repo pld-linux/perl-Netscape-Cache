@@ -1,0 +1,27 @@
+--- examples.paths/delcache.pl	Mon Jan 26 01:26:43 1998
++++ examples/delcache.pl	Sun Oct 17 14:16:49 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ # -*- perl -*-
+ 
+ #
+--- examples.paths/grepcache.pl	Sat Jan  3 15:23:59 1998
++++ examples/grepcache.pl	Sun Oct 17 14:17:01 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl
++#!/usr/bin/perl
+ # -*- perl -*-
+ 
+ #
+--- examples.paths/nscache	Wed Nov 26 21:22:21 1997
++++ examples/nscache	Sun Oct 17 14:17:47 1999
+@@ -1,6 +1,6 @@
+-#!/usr/local/bin/perl
++#!/usr/bin/perl
+ # This is -*- perl -*-
+-#!/usr/local/bin/suidperl
++##!/usr/bin/suidperl
+ 
+ #
+ # $Id$
