@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Netscape::Cache
 Summary(it):	Modulo di Perl Netscape::Cache
 Summary(ja):	Netscape::Cache Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Netscape::Cache ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Netscape::Cache
+Summary(nb):	Perlmodul Netscape::Cache
 Summary(pl):	Modu³ Perla Netscape::Cache
 Summary(pt):	Módulo de Perl Netscape::Cache
 Summary(pt_BR):	Módulo Perl Netscape::Cache
