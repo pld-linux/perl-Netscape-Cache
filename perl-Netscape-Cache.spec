@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl Netscape::Cache
 Summary(zh_CN):	Netscape::Cache Perl дё©И
 Name:		perl-Netscape-Cache
 Version:	0.45
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
