@@ -27,7 +27,7 @@ Netscape-Cache umo¿liwia dostêp do cache'a Nestscape'a.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
