@@ -2,9 +2,9 @@
 Summary:	Netscape-Cache perl module
 Summary(pl):	Modu³ perla Netscape-Cache
 Name:		perl-Netscape-Cache
-Version:	0.42
-Release:	3
-Copyright:	GPL
+Version:	0.44
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Netscape/Netscape-Cache-%{version}.tar.gz
@@ -31,11 +31,12 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+rm -f examples/*~
+install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Netscape/Cache
@@ -58,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}-%{version}
+/usr/src/examples/%{name}
