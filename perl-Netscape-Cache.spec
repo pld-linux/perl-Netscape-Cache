@@ -24,12 +24,12 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Netscape::Cache
 Summary(zh_CN):	Netscape::Cache Perl Ä£¿é
 Name:		perl-Netscape-Cache
 Version:	0.45
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 %if %{!?_with_tests:0}%{?_with_tests:1}
 BuildRequires:	db1
@@ -48,7 +48,8 @@ Netscape::Cache umo¿liwia dostêp do cache'a Nestscape'a.
 %patch -p0
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{?_with_tests:%{__make} test}
 
@@ -68,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Netscape/Cache.pm
+%{perl_vendorlib}/Netscape/Cache.pm
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
