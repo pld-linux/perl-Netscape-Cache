@@ -48,7 +48,7 @@ Netscape::Cache umo¿liwia dostêp do cache'a Nestscape'a.
 %patch -p0
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{?_with_tests:%{__make} test}
 
