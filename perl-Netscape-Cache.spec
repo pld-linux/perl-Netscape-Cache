@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Netscape
 %define	pnam	Cache
-Summary:	Netscape-Cache perl module
-Summary(pl):	Modu³ perla Netscape-Cache
+Summary:	Netscape::Cache perl module
+Summary(pl):	Modu³ perla Netscape::Cache
 Name:		perl-Netscape-Cache
 Version:	0.44
 Release:	7
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Netscape-Cache - module for accessing Netscape cache files.
+Netscape::Cache - module for accessing Netscape cache files.
 
 %description -l pl
-Netscape-Cache umo¿liwia dostêp do cache'a Nestscape'a.
+Netscape::Cache umo¿liwia dostêp do cache'a Nestscape'a.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
