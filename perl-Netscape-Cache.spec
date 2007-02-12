@@ -6,22 +6,22 @@
 %define		pdir	Netscape
 %define		pnam	Cache
 Summary:	Netscape::Cache Perl module
-Summary(cs):	Modul Netscape::Cache pro Perl
-Summary(da):	Perlmodul Netscape::Cache
-Summary(de):	Netscape::Cache Perl Modul
-Summary(es):	Módulo de Perl Netscape::Cache
-Summary(fr):	Module Perl Netscape::Cache
-Summary(it):	Modulo di Perl Netscape::Cache
-Summary(ja):	Netscape::Cache Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Netscape::Cache ÆŞ ¸ğÁÙ
-Summary(nb):	Perlmodul Netscape::Cache
-Summary(pl):	Modu³ Perla Netscape::Cache
-Summary(pt):	Módulo de Perl Netscape::Cache
-Summary(pt_BR):	Módulo Perl Netscape::Cache
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Netscape::Cache
-Summary(sv):	Netscape::Cache Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Netscape::Cache
-Summary(zh_CN):	Netscape::Cache Perl Ä£¿é
+Summary(cs.UTF-8):   Modul Netscape::Cache pro Perl
+Summary(da.UTF-8):   Perlmodul Netscape::Cache
+Summary(de.UTF-8):   Netscape::Cache Perl Modul
+Summary(es.UTF-8):   MÃ³dulo de Perl Netscape::Cache
+Summary(fr.UTF-8):   Module Perl Netscape::Cache
+Summary(it.UTF-8):   Modulo di Perl Netscape::Cache
+Summary(ja.UTF-8):   Netscape::Cache Perl ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«
+Summary(ko.UTF-8):   Netscape::Cache í„ ëª¨ì¤„
+Summary(nb.UTF-8):   Perlmodul Netscape::Cache
+Summary(pl.UTF-8):   ModuÅ‚ Perla Netscape::Cache
+Summary(pt.UTF-8):   MÃ³dulo de Perl Netscape::Cache
+Summary(pt_BR.UTF-8):   MÃ³dulo Perl Netscape::Cache
+Summary(ru.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl Netscape::Cache
+Summary(sv.UTF-8):   Netscape::Cache Perlmodul
+Summary(uk.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl Netscape::Cache
+Summary(zh_CN.UTF-8):   Netscape::Cache Perl æ¨¡å—
 Name:		perl-Netscape-Cache
 Version:	0.45
 Release:	3
@@ -40,8 +40,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Netscape::Cache - module for accessing Netscape cache files.
 
-%description -l pl
-Netscape::Cache umo¿liwia dostêp do cache'a Nestscape'a.
+%description -l pl.UTF-8
+Netscape::Cache umoÅ¼liwia dostÄ™p do cache'a Nestscape'a.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
