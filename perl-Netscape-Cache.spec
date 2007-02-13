@@ -6,22 +6,22 @@
 %define		pdir	Netscape
 %define		pnam	Cache
 Summary:	Netscape::Cache Perl module
-Summary(cs.UTF-8):   Modul Netscape::Cache pro Perl
-Summary(da.UTF-8):   Perlmodul Netscape::Cache
-Summary(de.UTF-8):   Netscape::Cache Perl Modul
-Summary(es.UTF-8):   Módulo de Perl Netscape::Cache
-Summary(fr.UTF-8):   Module Perl Netscape::Cache
-Summary(it.UTF-8):   Modulo di Perl Netscape::Cache
-Summary(ja.UTF-8):   Netscape::Cache Perl モジュール
-Summary(ko.UTF-8):   Netscape::Cache 펄 모줄
-Summary(nb.UTF-8):   Perlmodul Netscape::Cache
-Summary(pl.UTF-8):   Moduł Perla Netscape::Cache
-Summary(pt.UTF-8):   Módulo de Perl Netscape::Cache
-Summary(pt_BR.UTF-8):   Módulo Perl Netscape::Cache
-Summary(ru.UTF-8):   Модуль для Perl Netscape::Cache
-Summary(sv.UTF-8):   Netscape::Cache Perlmodul
-Summary(uk.UTF-8):   Модуль для Perl Netscape::Cache
-Summary(zh_CN.UTF-8):   Netscape::Cache Perl 模块
+Summary(cs.UTF-8):	Modul Netscape::Cache pro Perl
+Summary(da.UTF-8):	Perlmodul Netscape::Cache
+Summary(de.UTF-8):	Netscape::Cache Perl Modul
+Summary(es.UTF-8):	Módulo de Perl Netscape::Cache
+Summary(fr.UTF-8):	Module Perl Netscape::Cache
+Summary(it.UTF-8):	Modulo di Perl Netscape::Cache
+Summary(ja.UTF-8):	Netscape::Cache Perl モジュール
+Summary(ko.UTF-8):	Netscape::Cache 펄 모줄
+Summary(nb.UTF-8):	Perlmodul Netscape::Cache
+Summary(pl.UTF-8):	Moduł Perla Netscape::Cache
+Summary(pt.UTF-8):	Módulo de Perl Netscape::Cache
+Summary(pt_BR.UTF-8):	Módulo Perl Netscape::Cache
+Summary(ru.UTF-8):	Модуль для Perl Netscape::Cache
+Summary(sv.UTF-8):	Netscape::Cache Perlmodul
+Summary(uk.UTF-8):	Модуль для Perl Netscape::Cache
+Summary(zh_CN.UTF-8):	Netscape::Cache Perl 模块
 Name:		perl-Netscape-Cache
 Version:	0.45
 Release:	3
