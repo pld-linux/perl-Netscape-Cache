@@ -23,13 +23,13 @@ Summary(sv.UTF-8):	Netscape::Cache Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl Netscape::Cache
 Summary(zh_CN.UTF-8):	Netscape::Cache Perl 模块
 Name:		perl-Netscape-Cache
-Version:	0.45
-Release:	4
+Version:	0.46
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	faef7e1331388f1cbd10aac172649011
+# Source0-md5:	f39bc40fc2c3f61219ac5a3d4a39ccc2
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
