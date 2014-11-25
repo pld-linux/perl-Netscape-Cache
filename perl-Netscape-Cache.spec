@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Netscape
 %define		pnam	Cache
+%include	/usr/lib/rpm/macros.perl
 Summary:	Netscape::Cache Perl module
 Summary(cs.UTF-8):	Modul Netscape::Cache pro Perl
 Summary(da.UTF-8):	Perlmodul Netscape::Cache
@@ -31,9 +31,12 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f39bc40fc2c3f61219ac5a3d4a39ccc2
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Netscape-Cache/
 BuildRequires:	perl-devel >= 1:5.8.0
-%{?with_tests:BuildRequires:	db1}
+BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	db1
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -62,7 +65,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 	DESTDIR=$RPM_BUILD_ROOT
 rm -f examples/*~
 rm -f examples/*.orig
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
