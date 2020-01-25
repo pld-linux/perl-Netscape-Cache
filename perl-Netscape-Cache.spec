@@ -4,7 +4,6 @@
 
 %define		pdir	Netscape
 %define		pnam	Cache
-%include	/usr/lib/rpm/macros.perl
 Summary:	Netscape::Cache Perl module
 Summary(cs.UTF-8):	Modul Netscape::Cache pro Perl
 Summary(da.UTF-8):	Perlmodul Netscape::Cache
